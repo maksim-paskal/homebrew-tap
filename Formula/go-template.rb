@@ -9,7 +9,7 @@ class GoTemplate < Formula
 
   def install
     if OS.mac?
-      bin.install "./go-template-darwin-amd64"
+      bin.install "./go-template-darwin-amd64" => "go-template"
     end
   end
 
