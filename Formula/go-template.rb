@@ -5,7 +5,7 @@ class GoTemplate < Formula
   sha256 "389ed0e0a0c7009e7de89bd0412fda33dc10d5b50e410e3a0891fe83033a35cb"
 
   def install
-    bin.install "./bin/go-template"
+    bin.install "./go-template-darwin-amd64"
   end
 
   test do
