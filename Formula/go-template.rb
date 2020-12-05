@@ -3,8 +3,8 @@ class GoTemplate < Formula
   homepage ""
 
   if OS.mac?
-    url "https://github.com/maksim-paskal/go-template/releases/download/v0.0.6/go-template-darwin-amd64"
-    sha256 "389ed0e0a0c7009e7de89bd0412fda33dc10d5b50e410e3a0891fe83033a35cb"
+    url "https://github.com/maksim-paskal/go-template/releases/download/v0.0.7/go-template-darwin-amd64"
+    sha256 "a109a95c04aa7c257a764ad8b2e1c021d2085d1a1c3b0d4901431ec5406fb7c6"
   end
 
   def install
