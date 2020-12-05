@@ -1,6 +1,7 @@
 class GoTemplate < Formula
   desc ""
   homepage ""
+  version "v0.0.7"
 
   if OS.mac?
     url "https://github.com/maksim-paskal/go-template/releases/download/v0.0.7/go-template-darwin-amd64"
