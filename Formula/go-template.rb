@@ -1,4 +1,4 @@
-class GoTemplateApp < Formula
+class GoTemplate < Formula
   desc ""
   homepage ""
   url "https://github.com/maksim-paskal/go-template/releases/download/v0.0.6/go-template-darwin-amd64"
