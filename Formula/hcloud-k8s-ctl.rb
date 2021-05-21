@@ -1,4 +1,4 @@
-class GoTemplate < Formula
+class HcloudK8sCtl < Formula
   desc ""
   homepage ""
   version "v0.0.2"
