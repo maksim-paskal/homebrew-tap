@@ -5,7 +5,7 @@ class K8sResourcesCli < Formula
 
   if OS.mac?
     url "https://github.com/maksim-paskal/k8s-resources-cli/releases/download/v#{version}/k8s-resources-cli_#{version}_darwin_amd64"
-    sha256 "80f07f84997c60e6fecc793c55393797f8b6b5226e9b37c1d269e00301154145"
+    sha256 "872bf3c0d1681495bd42bd0b5733ba7a45cacb0cb9df85edae3c21b1c6033341"
   end
 
   def install
