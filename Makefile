@@ -1,6 +1,7 @@
 test:
 	brew install --debug --verbose \
 	./Formula/k8s-resources-cli.rb \
+	./Formula/k8s-images-cli.rb \
 	./Formula/go-template.rb \
 	./Formula/hcloud-k8s-ctl.rb
 clean:
