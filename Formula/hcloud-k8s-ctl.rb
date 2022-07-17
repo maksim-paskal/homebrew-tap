@@ -1,11 +1,11 @@
 class HcloudK8sCtl < Formula
   desc ""
   homepage "https://github.com/maksim-paskal/hcloud-k8s-ctl"
-  version "0.1.5"
+  version "0.1.6"
 
   if OS.mac?
     url "https://github.com/maksim-paskal/hcloud-k8s-ctl/releases/download/v#{version}/hcloud-k8s-ctl_#{version}_darwin_amd64"
-    sha256 "8d175ce14e83d090f905954c9738ef9ca87607f50f11ee8c72c5c31a32c3f9e5"
+    sha256 "6569381fea3bf3601145cc87073c68488a176db6abd86fc4d2304ff3a1ab9d45"
   end
 
   def install
