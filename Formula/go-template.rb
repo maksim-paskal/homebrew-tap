@@ -1,16 +1,16 @@
 class GoTemplate < Formula
   desc ""
   homepage "https://github.com/maksim-paskal/go-template"
-  version "0.0.9"
+  version "0.1.1"
 
   if OS.mac?
-    url "https://github.com/maksim-paskal/go-template/releases/download/v#{version}/go-template-darwin-amd64"
-    sha256 "b5243c866c7c3129f9c2a3bf756ba1b17ea163b542dc795670e42e1e5118b3bf"
+    url "https://github.com/maksim-paskal/go-template/releases/download/v#{version}/go-template_#{version}_darwin_amd64"
+    sha256 "358e2b0d67ba222e110506aa2bd94f11322eac98768c08e18f1d308fa69728d1"
   end
 
   def install
     if OS.mac?
-      bin.install "./go-template-darwin-amd64" => "go-template"
+      bin.install "./go-template_#{version}_darwin_amd64" => "go-template"
     end
   end
 
