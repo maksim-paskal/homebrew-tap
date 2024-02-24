@@ -11,3 +11,13 @@ clean:
 	k8s-resources-cli \
 	go-template \
 	hcloud-k8s-ctl
+
+audit:
+	brew untap homebrew-releaser/test || true
+	brew tap-new homebrew-releaser/test --no-git
+	cp Formula/* `brew --repository`/Library/Taps/homebrew-releaser/homebrew-test/Formula
+
+	brew audit --strict --new --online homebrew-releaser/test/k8s-images-cli
+	brew install --debug --verbose homebrew-releaser/test/k8s-images-cli
+
+	brew untap homebrew-releaser/test || true
