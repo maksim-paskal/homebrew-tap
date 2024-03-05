@@ -3,6 +3,11 @@ class K8sResourcesCli < Formula
   homepage "https://github.com/maksim-paskal/k8s-resources-cli"
   version "0.0.9"
 
+  livecheck do
+    url :homepage
+    regex(/^v?(\d+(?:\.\d+)+)$/i)
+  end
+
   # curl -L https://github.com/maksim-paskal/k8s-resources-cli/releases/download/v0.0.9/checksums.txt
   if OS.mac?
     if Hardware::CPU.intel?
