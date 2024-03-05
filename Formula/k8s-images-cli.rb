@@ -8,8 +8,6 @@ class K8sImagesCli < Formula
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
-  depends_on arch: :intel
-  depends_on arch: :arm64
   depends_on macos: :mojave
 
   # curl -L https://github.com/maksim-paskal/k8s-images-cli/releases/download/v0.0.7/checksums.txt
