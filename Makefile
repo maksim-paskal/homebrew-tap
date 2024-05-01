@@ -24,4 +24,5 @@ test:
 	homebrew-releaser/test/k8s-resources-cli \
 	homebrew-releaser/test/hcloud-k8s-ctl
 
+	brew uninstall `brew ls --full-name --formula | grep homebrew-releaser/test`
 	brew untap homebrew-releaser/test || true

@@ -1,23 +1,23 @@
 class HcloudK8sCtl < Formula
   desc "High available Kubernetes cluster on Hetzner Cloud with Autoscaling"
   homepage "https://github.com/maksim-paskal/hcloud-k8s-ctl"
-  version "0.3.4"
+  version "0.3.5"
 
   livecheck do
     url :homepage
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
-  # curl -L https://github.com/maksim-paskal/hcloud-k8s-ctl/releases/download/v0.3.4/checksums.txt
+  # curl -L https://github.com/maksim-paskal/hcloud-k8s-ctl/releases/download/v0.3.5/checksums.txt
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/maksim-paskal/hcloud-k8s-ctl/releases/download/v#{version}/hcloud-k8s-ctl_#{version}_darwin_amd64"
-      sha256 "234032f9f3896a3a767811b67a4ad7b99fd5f993772ff81909bde299b59ea439"
+      sha256 "5825f1049dffce8bbfd01aad1fe0f6372ab0b5a3d4619b506e6777926c931b24"
     end
 
     if Hardware::CPU.arm?
       url "https://github.com/maksim-paskal/hcloud-k8s-ctl/releases/download/v#{version}/hcloud-k8s-ctl_#{version}_darwin_arm64"
-      sha256 "b7dc5435900ed23c96b38cf2ae3327816aee94ac33e78dc652af504c36d98cfa"
+      sha256 "578edc735dc9bb99856e1c0d2af4c96cbf5b5701c381dca7854a7d8994e0c77f"
     end
   end
 
