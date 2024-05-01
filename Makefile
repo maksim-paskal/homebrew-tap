@@ -26,3 +26,10 @@ test:
 
 	brew uninstall `brew ls --full-name --formula | grep homebrew-releaser/test`
 	brew untap homebrew-releaser/test || true
+
+install:
+	brew install \
+	maksim-paskal/tap/k8s-resources-cli \
+	maksim-paskal/tap/go-template \
+	maksim-paskal/tap/hcloud-k8s-ctl \
+	maksim-paskal/tap/k8s-images-cli
