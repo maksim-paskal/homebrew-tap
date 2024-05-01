@@ -33,3 +33,5 @@ install:
 	maksim-paskal/tap/go-template \
 	maksim-paskal/tap/hcloud-k8s-ctl \
 	maksim-paskal/tap/k8s-images-cli
+
+	brew livecheck --tap=maksim-paskal/tap
