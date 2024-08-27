@@ -15,6 +15,6 @@ class GoTemplate < Formula
   end
 
   test do
-    system "#{bin}/go-template --version"
+    system "bin/go-template --version"
   end
 end

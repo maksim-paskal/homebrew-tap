@@ -27,6 +27,6 @@ class K8sImagesCli < Formula
   end
 
   test do
-    system "#{bin}/k8s-images-cli", "--version"
+    system "bin/k8s-images-cli", "--version"
   end
 end

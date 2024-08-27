@@ -15,6 +15,6 @@ class AksEngine < Formula
   end
 
   test do
-    system "#{bin}/aks-engine version"
+    system "bin/aks-engine version"
   end
 end

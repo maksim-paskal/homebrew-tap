@@ -29,6 +29,6 @@ class K8sResourcesCli < Formula
   end
 
   test do
-    system "#{bin}/k8s-resources-cli", "--version"
+    system "bin/k8s-resources-cli", "--version"
   end
 end

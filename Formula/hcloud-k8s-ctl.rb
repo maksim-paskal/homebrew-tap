@@ -27,6 +27,6 @@ class HcloudK8sCtl < Formula
   end
 
   test do
-    system "#{bin}/hcloud-k8s-ctl", "--version"
+    system "bin/hcloud-k8s-ctl", "--version"
   end
 end
