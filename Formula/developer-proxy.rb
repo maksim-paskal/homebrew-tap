@@ -21,13 +21,10 @@ class DeveloperProxy < Formula
   end
 
   def install
-    if OS.mac?
-      bin.install "./developer-proxy" => "developer-proxy" if Hardware::CPU.intel?
-      bin.install "./developer-proxy" => "developer-proxy" if Hardware::CPU.arm?
-    end
+    bin.install "./developer-proxy" => "developer-proxy"
   end
 
   test do
-    system "bin/developer-proxy", "--version1"
+    system "bin/developer-proxy", "--version"
   end
 end
