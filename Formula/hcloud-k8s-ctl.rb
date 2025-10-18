@@ -1,7 +1,7 @@
 class HcloudK8sCtl < Formula
   desc "High available Kubernetes cluster on Hetzner Cloud with Autoscaling"
   homepage "https://github.com/maksim-paskal/hcloud-k8s-ctl"
-  version "0.4.0"
+  version "0.4.2"
 
   livecheck do
     url :homepage
@@ -12,12 +12,12 @@ class HcloudK8sCtl < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/maksim-paskal/hcloud-k8s-ctl/releases/download/v#{version}/hcloud-k8s-ctl_#{version}_darwin_amd64"
-      sha256 "4f0ff2f7f040f69119c85a80e478686db928187a976ad4a8cec8abd730476fcb"
+      sha256 "8427a3de9e5abc376d4cd33dd8b640d312790552725dafb276b77d037de7c7ae"
     end
 
     if Hardware::CPU.arm?
       url "https://github.com/maksim-paskal/hcloud-k8s-ctl/releases/download/v#{version}/hcloud-k8s-ctl_#{version}_darwin_arm64"
-      sha256 "e6149de896f9eb582a44249df851789376be4b763683aa04b034cf5d46947659"
+      sha256 "e935af98b497120e933d1b48c6d851e87a6c24de130ce7d4bf8565007d9dbf5b"
     end
   end
 
